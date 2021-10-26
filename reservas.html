@@ -60,13 +60,18 @@
                     <div class="col">
                         <form class="text-white">
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Endereço de email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="nome@exemplo.com">
+                                <label for="nome">Nome</label>
+                                <div id="txtNome"></div>
+                                <input type="text" class="form-control" id="nome" onkeyup='validaNome()' />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="text" class="form-control" id="email" onkeyup="validaEmail()" />
+                                <div id="txtEmail"></div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Telefone</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
                                     placeholder="(11)99999-9999">
                             </div>
                             <div class="form-group">
@@ -82,16 +87,38 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">O que deseja ?</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="assunto">Assunto:</label>
+                                <textarea name="assunto" class="form-control" id="assunto" rows="3"
+                                    onkeyup="validaAssunto()"></textarea>
+                                <div id="txtAssunto"></div>
                             </div>
+                            <button type="button" class="btn btn-outline-info" id='envio'
+                                onclick="enviar()">Enviar</button>
+
                         </form>
                     </div>
+
                     <div class="col">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197721328527!2d-46.65867588447587!3d-23.561341267477914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1622249419487!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                    </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197721328527!2d-46.65867588447587!3d-23.561341267477914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1622249419487!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
             <!-- Fim reservas-->
+            <!-- Início rede social -->
+
+            <footer>
+                <div id="container">
+                    <a href="https://www.instagram.com.br" target="_blank">
+                        <img class="tm-social p-30" src="img/instagram.png" alt="Logo do Instagram"></a>
+                    <a href="https://www.facebook.com.br" target="_blank">
+                        <img class="tm-social p-30" src="img/facebook.png" alt="Logo do Facebook"></a>
+                </div>
+                <p id="container" class="text-white"> Todos os direitos reservados: George S. Silva &copy</p>
+            </footer>
+            <!-- Fim rede social -->
+
         </div>
 
 
@@ -114,6 +141,7 @@
             crossorigin="anonymous"></script>
 
 
+        <script src='js/script.js'></script>
 
 </body>
 
