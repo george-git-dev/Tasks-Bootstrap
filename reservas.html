@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Restaurante - Reservas / Localização</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Início menu-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Restaurante</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse row align-items-end" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav" id="menu1">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">O Restaurante</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ambientes.html">Ambientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cardapio.html">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservas.html">Reservas / Localização</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+
+                </form>
+                <button class="btn btn-outline-dark btn-sm my-2 my-sm-0 mx-1" type="submit">Pesquisar</button>
+            </div>
+
+        </nav>
+        <!-- Fim menu-->
+
+        <!-- Início reservas-->
+        <div class="mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form class="text-white">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Endereço de email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="nome@exemplo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Telefone</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="(11)99999-9999">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Quantas pessoas ? </label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>Mais de 5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">O que deseja ?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197721328527!2d-46.65867588447587!3d-23.561341267477914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1622249419487!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                    </div>
+                </div>
+            </div>
+            <!-- Fim reservas-->
+        </div>
+
+
+
+
+
+        <!--Jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+
+        <!--Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+
+        <!--JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

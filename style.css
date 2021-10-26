@@ -1,0 +1,15 @@
+body {
+    background-color: #404040;
+}
+
+#menu1 {
+    margin-left: 35%;
+}
+
+.imgsocial {
+    width: 120px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
